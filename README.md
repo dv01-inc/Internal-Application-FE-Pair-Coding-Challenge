@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+## The Challenge
+Using the PokeApi, please create table that displays the following information:
+- Name
+- Moves
+- Type
+- Sprite
+- Is a good pokemon?
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+In the Name column, display the name of the Pokemon.
 
-## Available Scripts
+In the Moves column, display a list of comma seperated moves sorted in alhabetical order
 
-In the project directory, you can run:
+In the Type column, create a tag for each type the pokemon has and display in a comma seperated list. Tags should be colored according to the type of the pokemon:
+    - fire = red
+    - water = blue
+    - ice = light blue
+    - flying = white
+    - lightning = yellow
 
-### `npm start`
+In the Sprite column, please create the following flow:
+    - When the table first loads a button should be displayed with the text "View Pokemon"
+    - When a user presses the "View Pokemon" button, the row should update to show the front (default) image and a button with the text "Rotate"
+    - When a user pressed the "Rotate" button, the sprite shown should change to the back (default) image
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+In the Is A Good Pokemon column, implement the following ranking system:
+    - if the total of all base stat values is less than or equal to 400 display the text "Bad Pokemon"
+    - if the total of all base stat values is between 401 and 499 display the text "Average Pokemon"
+    - if the total of all base stat values is greater than or equal to than 500 display the text "Good Pokemon"
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Note
+Please use the following Pokemon for this challenge:
+- Charmander
+- Mudkip
+- Raichu
+- Articuno
